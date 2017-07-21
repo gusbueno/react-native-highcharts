@@ -12,8 +12,9 @@ class ChartWeb extends Component {
     }
   }
   createChartHTML(config) {
-    return `<html>        
+    return `<html>
         <head>
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
           <style media="screen" type="text/css">#container{width:100%;height:100%;top:0;left:0;right:0;bottom:0;position:absolute;}</style>
             <script src="https://code.highcharts.com/${this.props.stock ? 'stock/highstock' : 'highcharts'}.js"></script>
             <script src="https://code.highcharts.com/modules/exporting.js"></script>
